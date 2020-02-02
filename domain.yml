@@ -2,23 +2,24 @@ session_config:
   session_expiration_time: 0
   carry_over_slots_to_new_session: true
 intents:
-  - create_case:
-      use_entities: []
-  - affirm
-  - deny
-  - stop
-  - thankyou
-  - greet
-  - bot_challenge
-  - goodbye
+- create_case:
+    use_entities: []
+- affirm
+- deny
+- stop
+- thankyou
+- greet
+- bot_challenge
+- goodbye
+- listen_to_joke
 entities:
-  - type
-  - title
-  - priority
-  - category
-  - description
-  - security
-  - fund_family
+- type
+- title
+- priority
+- category
+- description
+- security
+- fund_family
 slots:
   category:
     type: unfeaturized
@@ -73,22 +74,22 @@ templates:
   utter_noworries:
   - text: you are welcome :)
 actions:
-  - utter_slots_values
-  - utter_noworries
-  - utter_chitchat
-  - utter_ask_continue
-  - utter_greet
-  - utter_iamabot
-  - utter_ask_type
-  - utter_ask_title
-  - utter_ask_priority
-  - utter_category
-  - utter_case_description
-  - utter_ask_security
-  - utter_ask_fund_family
-  - utter_case_submit
-  - utter_slot_values
-  - utter_goodbye
-  - utter_happy
+- utter_slots_values
+- utter_noworries
+- utter_ask_continue
+- utter_greet
+- utter_iamabot
+- utter_ask_type
+- utter_ask_title
+- utter_ask_priority
+- utter_category
+- utter_case_description
+- utter_ask_security
+- utter_ask_fund_family
+- utter_case_submit
+- utter_slot_values
+- utter_goodbye
+- utter_happy
+- action_joke
 forms:
-  - case_create_form
+- case_create_form
