@@ -32,13 +32,13 @@
 ## intent:create_case
 - Hi can i create a new case please
 - create a case please
-- NAV mismatch on [equity fund 1](Fund_Family) we have a missing trade for Vodafone
+- NAV mismatch on [equity fund 1](fund_family) we have a missing trade for [Vodafone](security)
 - yes can i create a case please
 - can i create a new case please
 
 ## intent:listen_to_joke
 - Can you tell me a joke ?
-- tell me a joke
+- tell me a joke please
 
 ## intent:tell_joke
 - i'm sad
