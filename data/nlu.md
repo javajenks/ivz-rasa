@@ -6,3 +6,6 @@
 
 ## intent:greet
 - hi
+
+## intent:create_case
+- create a case please
