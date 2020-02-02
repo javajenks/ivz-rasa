@@ -3,8 +3,6 @@ pipeline:
 - name: WhitespaceTokenizer
 - name: CRFEntityExtractor
 - name: EntitySynonymMapper
-- name: EmbeddingIntentClassifier
-- name: DucklingHTTPExtractor
 policies:
 - name: FallbackPolicy
 - name: MemoizationPolicy
