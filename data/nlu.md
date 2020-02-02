@@ -36,7 +36,7 @@
 - yes can i create a case please
 - can i create a new case please
 
-## intent:tell_joke
+## intent:listen_to_joke
 - Can you tell me a joke ?
 
 ## regex:ISIN_Code
