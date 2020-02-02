@@ -37,8 +37,9 @@
 - can i create a new case please
 
 ## intent:listen_to_joke
-- Can you tell me a joke ?
-- tell me a joke please
+- can you tell me a joke
+- can you tell me another joke
+- i'm sad
 
 ## intent:thankyou
 - haha
