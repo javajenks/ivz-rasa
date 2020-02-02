@@ -40,11 +40,6 @@
 - Can you tell me a joke ?
 - tell me a joke please
 
-## intent:tell_joke
-- i'm sad
-- can you tell me another joke
-- can you tell me a joke
-
 ## intent:thankyou
 - haha
 - thats funny thanks
