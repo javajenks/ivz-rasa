@@ -1,40 +1,97 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-actions:
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
-- utter_iamabot
-
+- create_case:
+    use_entities: []
+- chitchat:
+    use_entities: []
+- affirm
+- deny
+- stop
+- thankyou
+- greet
+- bot_challenge
+- goodbye
+entities:
+- type
+- title
+- priority
+- category
+- description
+- security
+- fund_family
+slots:
+  category:
+    type: unfeaturized
+    auto_fill: false
+  description:
+    type: unfeaturized
+    auto_fill: false
+  fund_family:
+    type: unfeaturized
+    auto_fill: false
+  priority:
+    type: unfeaturized
+    auto_fill: false
+  requested_slot:
+    type: unfeaturized
+  security:
+    type: unfeaturized
+    auto_fill: false
+  title:
+    type: unfeaturized
+    auto_fill: false
+  type:
+    type: unfeaturized
+    auto_fill: false
 templates:
   utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Hello! I am the IVZBot - can I help you create a case ?
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Great, carry on!
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  - text: I am the IVZ-BOT !
+  utter_ask_type:
+  - text: What kind of case would you like to create
+  utter_ask_title:
+  - text: What's the title of the case ?
+  utter_ask_priority:
+  - text: What's the case priority ?
+  utter_category:
+  - text: What's the case category ?
+  utter_case_description:
+  - text: Please input a description of the case
+  utter_ask_security:
+  - text: Please input a recognised security identifier
+  utter_ask_fund_family:
+  - text: Please input the fund family
+  utter_case_submit:
+  - text: Creating the case ..
+  utter_slot_values:
+  - text: "I'm about to create a case with the folowing attributes :\n- type:{type}\n\
+      - title: {title}\n- priority: {priority}\n- category: {category}\n- description:\
+      \ {description}\n- security: {security}\n- Fund Family: {fund_family}"
+  utter_noworries:
+  - text: you are welcome :)
+actions:
+- utter_slots_values
+- utter_noworries
+- utter_chitchat
+- utter_ask_continue
+- utter_greet
+- utter_iamabot
+- utter_ask_type
+- utter_ask_title
+- utter_ask_priority
+- utter_category
+- utter_case_description
+- utter_ask_security
+- utter_ask_fund_family
+- utter_case_submit
+- utter_slot_values
+- utter_goodbye
+- utter_happy
+- case_create_form

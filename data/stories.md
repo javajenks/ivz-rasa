@@ -1,30 +1,144 @@
 ## happy path
 * greet
-  - utter_greet
-* mood_great
-  - utter_happy
+    - utter_greet
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
 
-## sad path 1
+## unhappy path
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+    - utter_greet
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+* chitchat
+    - utter_chitchat
+    - case_create_form
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## very unhappy path
+* greet
+    - utter_greet
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+* chitchat
+    - utter_chitchat
+    - case_create_form
+* chitchat
+    - utter_chitchat
+    - case_create_form
+* chitchat
+    - utter_chitchat
+    - case_create_form
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## stop but continue path
+* greet
+    - utter_greet
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+* stop
+    - utter_ask_continue
 * affirm
-  - utter_happy
+    - case_create_form
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
 
-## sad path 2
+## stop and really stop path
 * greet
-  - utter_greet
-* mood_unhappy
-  - utter_cheer_up
-  - utter_did_that_help
+    - utter_greet
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+* stop
+    - utter_ask_continue
 * deny
-  - utter_goodbye
+    - action_deactivate_form
+    - form{"name": null}
 
-## say goodbye
-* goodbye
-  - utter_goodbye
+## chitchat stop but continue path
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+* chitchat
+    - utter_chitchat
+    - case_create_form
+* stop
+    - utter_ask_continue
+* affirm
+    - case_create_form
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## stop but continue and chitchat path
+* greet
+    - utter_greet
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+* stop
+    - utter_ask_continue
+* affirm
+    - case_create_form
+* chitchat
+    - utter_chitchat
+    - case_create_form
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## chitchat stop but continue and chitchat path
+* greet
+    - utter_greet
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+* chitchat
+    - utter_chitchat
+    - case_create_form
+* stop
+    - utter_ask_continue
+* affirm
+    - case_create_form
+* chitchat
+    - utter_chitchat
+    - case_create_form
+    - form{"name": null}
+    - utter_slots_values
+* thankyou
+    - utter_noworries
+
+## chitchat, stop and really stop path
+* greet
+    - utter_greet
+* create_case
+    - case_create_form
+    - form{"name": "case_create_form"}
+* chitchat
+    - utter_chitchat
+    - case_create_form
+* stop
+    - utter_ask_continue
+* deny
+    - action_deactivate_form
+    - form{"name": null}
 
 ## bot challenge
 * bot_challenge
