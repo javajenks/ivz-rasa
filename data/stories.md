@@ -34,3 +34,12 @@
     - action_joke
 * thankyou
     - utter_noworries
+
+## New Story
+
+* greet
+    - utter_greet
+* tell_joke
+    - action_joke
+* greet
+* tell_joke
