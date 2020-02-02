@@ -38,6 +38,17 @@
 
 ## intent:listen_to_joke
 - Can you tell me a joke ?
+- tell me a joke
+
+## intent:tell_joke
+- i'm sad
+- can you tell me another joke
+- can you tell me a joke
+
+## intent:thankyou
+- haha
+- thats funny thanks
+- thanks
 
 ## regex:ISIN_Code
 - (BE|BM|FR|BG|VE|DK|HR|DE|JP|HU|HK|JO|BR|XS|FI|GR|IS|RU|LB|PT|NO|TW|UA|TR|LK|LV|LU|TH|NL|PK|PH|RO|EG|PL|AA|CH|CN|CL|EE|CA|IR|IT|ZA|CZ|CY|AR|AU|AT|IN|CS|CR|IE|ID|ES|PE|TN|PA|SG|IL|US|MX|SK|KR|SI|KW|MY|MO|SE|GB|GG|KY|JE|VG|NG|SA|MU)([0-9A-Z]{9})([0-9])

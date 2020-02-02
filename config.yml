@@ -1,6 +1,12 @@
 language: en
-pipeline: supervised_embeddings
+pipeline:
+- name: WhitespaceTokenizer
+- name: CRFEntityExtractor
+- name: EntitySynonymMapper
+- name: EmbeddingIntentClassifier
+- name: DucklingHTTPExtractor
 policies:
+- name: FallbackPolicy
 - name: MemoizationPolicy
-- name: KerasPolicy
+- name: FormPolicy
 - name: MappingPolicy
