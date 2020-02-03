@@ -29,6 +29,7 @@
 - am I talking to a bot?
 - am I talking to a human?
 - are you a human ?
+- are you a bot ?
 
 ## intent:create_case
 - Hi can i create a new case please
@@ -37,6 +38,10 @@
 - yes can i create a case please
 - can i create a new case please
 - can i create a case please
+- NAV for IVZ Equity fund is off today
+- create a case
+- this is a new case
+- a new case
 
 ## intent:listen_to_joke
 - Can you tell me a joke ?

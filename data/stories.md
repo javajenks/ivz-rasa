@@ -1,13 +1,14 @@
 ## happy path
 * greet
     - utter_greet
-* affirm
-    - case_create_form
-    - form{"name": "case_create_form"}
-    - form{"name": null}
-    - utter_slots_values
-* goodbye
-    - utter_noworries
+* create_case
+	- utter_ask_description
+* inform{"description": "New case"}
+	- utter_ask_category
+* inform{"category":"Pricing Exception"}
+	- utter_ask_security
+* inform{"security":"My security"}
+    - utter_slot_values
 
 ## bot challenge
 * bot_challenge
