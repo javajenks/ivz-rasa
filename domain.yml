@@ -27,16 +27,7 @@ slots:
   fund_family:
     type: unfeaturized
     auto_fill: false
-  priority:
-    type: unfeaturized
-    auto_fill: false
   security:
-    type: unfeaturized
-    auto_fill: false
-  title:
-    type: unfeaturized
-    auto_fill: false
-  type:
     type: unfeaturized
     auto_fill: false
 templates:
@@ -75,8 +66,6 @@ actions:
 - utter_noworries
 - utter_greet
 - utter_iamabot
-- utter_ask_title
-- utter_ask_priority
 - utter_ask_security
 - utter_ask_fund_family
 - utter_case_submit
