@@ -42,6 +42,7 @@
 - create a case
 - this is a new case
 - a new case
+- NAV Mismatch for [Vodafone](security)
 
 ## intent:listen_to_joke
 - Can you tell me a joke ?

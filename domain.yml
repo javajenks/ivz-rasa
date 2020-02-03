@@ -52,9 +52,9 @@ templates:
   utter_goodbye:
   - text: Cheers..
   utter_greet:
-  - text: 'Hi '
-  - text: hello
-  - text: hey there
+  - text: Hi - what can I do for you ?
+  - text: hello - how can i be of service ?
+  - text: Hey there - What can I do for you
   utter_noworries:
   - text: you are welcome :)
   - text: Glad to be of service
