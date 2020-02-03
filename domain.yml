@@ -1,5 +1,5 @@
 session_config:
-  session_expiration_time: 0
+  session_expiration_time: 0.0
   carry_over_slots_to_new_session: true
 intents:
 - create_case:
@@ -42,13 +42,43 @@ slots:
   type:
     type: unfeaturized
     auto_fill: false
+templates:
+  utter_category:
+  - text: What's the case category ?
+  utter_case_description:
+  - text: What's the case description ?
+  utter_ask_security:
+  - text: Please input a recognised security identifier
+  utter_ask_fund_family:
+  - text: Please input the fund family
+  utter_case_submit:
+  - text: Creating the case ..
+  utter_iamabot:
+  - text: I am the IVZ-BOT !
+  utter_happy:
+  - text: Great, carry on!
+  utter_slot_values:
+  - text: "I'm about to create a case with the folowing attributes :\n- title: {title}\n\
+      - priority: {priority}\n- category: {category}\n- description: {description}\n\
+      - security: {security}\n- Fund Family: {fund_family}"
+  utter_ask_title:
+  - text: Whats the title of the case ?
+  utter_ask_priority:
+  - text: Whats the case priority ?
+  utter_goodbye:
+  - text: Cheers..
+  utter_greet:
+  - text: 'Hi '
+  - text: hello
+  - text: hey there
+  utter_noworries:
+  - text: you are welcome :)
+  - text: Glad to be of service
 actions:
 - utter_slots_values
 - utter_noworries
-- utter_ask_continue
 - utter_greet
 - utter_iamabot
-- utter_ask_type
 - utter_ask_title
 - utter_ask_priority
 - utter_category
